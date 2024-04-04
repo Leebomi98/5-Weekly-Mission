@@ -1,4 +1,4 @@
-.warp {
+.folder-wrap {
   background: #e7effb;
   display: flex;
   justify-content: center;
@@ -65,7 +65,6 @@
   color: #000;
   text-align: center;
   font-feature-settings: "clig" off, "liga" off;
-  /* Linkbrary/h1-semibold */
   font-family: Pretendard;
   font-size: 40px;
   font-style: normal;

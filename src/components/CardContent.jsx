@@ -12,7 +12,7 @@ function CardContent() {
         />
       </div>
       <p className="card-content-description">내용</p>
-      <span className="card-content-createdAt">만든 날짜</span>
+      <span className="card-content-created-at">만든 날짜</span>
     </div>
   );
 }

@@ -2,7 +2,7 @@ import "../css/Folder.css";
 
 function Folder() {
   return (
-    <div className="warp">
+    <div className="folder-wrap">
       <div className="user">
         <img
           className="folder-user"

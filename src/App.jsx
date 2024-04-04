@@ -14,10 +14,6 @@ function App() {
       <Cards />
       <Footer />
       <div className="search-form"></div>
-      {/* <div>
-        <div>card '반복문 map'</div>
-      </div>
-      <div>footer</div> */}
     </div>
   );
 }
