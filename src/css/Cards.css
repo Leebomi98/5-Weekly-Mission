@@ -20,6 +20,7 @@
 }
 
 @media (max-width: 1123px) {
+  /* max-width 1199 */
   .cards {
     grid-template-columns: 340px 340px;
   }
