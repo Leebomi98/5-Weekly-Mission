@@ -1,17 +1,7 @@
-// function requestProfile() {
-
-// }
-
-// function requestFolders() {
-
-// }
-
-// function requestLinks() {
-
-// }
-
-// export requestProfile;
-
-// export requestFolders;
-
-// export requestLinks;
+export async function getProfile() {
+  const response = await fetch(
+    "https://bootcamp-api.codeit.kr/api/sample/user"
+  );
+  const body = await response.json();
+  return body;
+}

@@ -1,14 +1,15 @@
 import "../css/Profile.css";
 
-function Profile() {
+function Profile({ profile }) {
+  console.log(profile);
   return (
     <div className="profile">
       <img
         className="profile-img"
-        src="images/Ellipse 21.png"
+        src={profile?.profileImageSource ?? ""}
         alt="프로필 이미지"
       />
-      <p className="profile-email">이메일 주소</p>
+      <p className="profile-email">{profile?.email ?? ""}</p>
     </div>
   );
 }

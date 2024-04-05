@@ -8,6 +8,7 @@
   width: 28px;
   height: 28px;
   flex-shrink: 0;
+  border-radius: 22px;
 }
 
 .profile-email {
