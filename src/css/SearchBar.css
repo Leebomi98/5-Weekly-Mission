@@ -26,6 +26,7 @@
 
 .wrap-search-bar-2 {
   position: relative;
+  z-index: -1;
 }
 
 @media (max-width: 1199px) {
