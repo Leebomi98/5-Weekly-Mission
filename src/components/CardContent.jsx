@@ -1,6 +1,11 @@
 import "../css/CardContent.css";
 
-function CardContent() {
+function CardContent({ cardDescription, cardCreatedAt }) {
+  function convertDate() {
+    const date = new Date(cardCreatedAt);
+    return `${date.getFullYear()}. ${date.getMonth() + 1}. ${date.getDate()}`;
+  }
+
   return (
     <div className="card-content">
       <div className="wrap-card-content-time-kebab">
@@ -11,8 +16,8 @@ function CardContent() {
           alt="더보기 이미지"
         />
       </div>
-      <p className="card-content-description">내용</p>
-      <span className="card-content-created-at">만든 날짜</span>
+      <p className="card-content-description">{cardDescription}</p>
+      <span className="card-content-created-at">{convertDate()}</span>
     </div>
   );
 }

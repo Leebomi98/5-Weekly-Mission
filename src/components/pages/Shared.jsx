@@ -51,7 +51,7 @@ function Shared() {
         />
       )}
       <SearchBar />
-      <Cards />
+      {folderData && <Cards links={folderData.links} />}
       <Footer />
       <div className="search-form"></div>
     </div>

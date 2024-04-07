@@ -1,12 +1,12 @@
 import Card from "./Card";
 import "../css/Cards.css";
 
-function Cards() {
+function Cards({ links }) {
   return (
     <div className="wrap-cards">
       <div className="cards">
-        {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((number) => {
-          return <Card />;
+        {links.map((link) => {
+          return <Card link={link} key={link.id} />;
         })}
       </div>
     </div>

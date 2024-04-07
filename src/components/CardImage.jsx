@@ -1,6 +1,6 @@
 import "../css/CardImage.css";
 
-function CardImage() {
+function CardImage({ cardImg }) {
   return (
     <div className="wrap-img">
       <img
@@ -8,7 +8,14 @@ function CardImage() {
         src="/images/little_star.png"
         alt="즐겨찾기 별모양"
       />
-      <img className="card-img" src="/images/image 7.png" alt="카드 이미지" />
+      <img
+        className="card-img"
+        src={cardImg ?? "images/no_card_data_img.png"}
+        alt="카드 이미지"
+        onError={(event) => {
+          event.target.src = "images/no_card_data_img.png";
+        }}
+      />
     </div>
   );
 }
