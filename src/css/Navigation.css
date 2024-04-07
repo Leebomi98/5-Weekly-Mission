@@ -12,6 +12,7 @@
   left: 0;
   right: 0;
   z-index: 1;
+  height: 93px;
 }
 
 .wrap {
@@ -58,6 +59,11 @@
   .logo-image {
     width: 88.667px;
     height: 16px;
+  }
+}
+@media (max-width: 390px) {
+  .nav {
+    height: 63px;
   }
 }
 

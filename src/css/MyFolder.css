@@ -1,0 +1,36 @@
+.my-folder-container {
+  display: flex;
+  padding: 8px 12px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  border: 1px solid #6d6afe;
+  background: #fff;
+  color: #000;
+  cursor: pointer;
+}
+
+@media (max-width: 390px) {
+  .my-folder-container {
+    padding: 6px 10px;
+  }
+}
+
+.my-folder-container.active {
+  background-color: #6d6afe;
+  color: #fff;
+}
+
+.my-folder-name {
+  font-family: Pretendard;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@media (max-width: 390px) {
+  .my-folder-name {
+    font-size: 14px;
+  }
+}

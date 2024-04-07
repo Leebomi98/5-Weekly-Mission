@@ -1,5 +1,6 @@
 .wrap-search-bar {
   margin-top: 40px;
+  margin-bottom: 40px;
   gap: 10px;
   display: flex;
   align-items: center;
@@ -21,6 +22,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+}
+
+@media (max-width: 390px) {
+  .wrap-search-bar {
+    margin-bottom: 32px;
   }
 }
 
