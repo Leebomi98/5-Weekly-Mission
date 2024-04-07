@@ -1,7 +1,6 @@
 import "../css/Profile.css";
 
 function Profile({ profile }) {
-  console.log(profile);
   return (
     <div className="profile">
       <img

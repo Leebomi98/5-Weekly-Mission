@@ -7,12 +7,20 @@ import { getProfile } from "../../api";
 import { useEffect, useState } from "react";
 
 function Shared() {
-  const [profile, setProfile] = useState({});
+  const [profile, setProfile] = useState(null);
 
   const handleLoadProfile = async () => {
-    const profile = await getProfile();
-    console.log(profile);
-    setProfile(profile);
+    const { email, id, name, profileImageSource } = await getProfile();
+    setProfile({
+      email,
+      id,
+      name,
+      profileImageSource,
+      // email: email,
+      // id: id,
+      // name: name,
+      // profileImageSource,
+    });
   };
 
   useEffect(() => {
