@@ -60,8 +60,6 @@
 }
 
 .folder-name {
-  width: 188px;
-  height: 48px;
   color: #000;
   text-align: center;
   font-feature-settings: "clig" off, "liga" off;
@@ -73,15 +71,7 @@
 }
 @media (max-width: 767px) {
   .folder-name {
-    color: #000;
-    width: 150px;
-    height: 38px;
-    text-align: center;
-    font-family: Pretendard;
     font-size: 32px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
     letter-spacing: -0.2px;
   }
 }

@@ -1,16 +1,16 @@
 import "../css/Folder.css";
 
-function Folder() {
+function Folder({ name, profileImageSource, ownerName }) {
   return (
     <div className="folder-wrap">
       <div className="user">
         <img
           className="folder-user"
-          src="/images/Avatar.png"
+          src={profileImageSource}
           alt="프로필 이미지"
         />
-        <span className="folder-user-name">@코드잇</span>
-        <img className="folder-name" src="/images/star.png" alt="폴더" />
+        <span className="folder-user-name">{ownerName}</span>
+        <p className="folder-name">{name}</p>
       </div>
     </div>
   );
