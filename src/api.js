@@ -10,3 +10,9 @@ export async function getFolder() {
   const responseJson = await response.json();
   return responseJson.folder;
 }
+
+export async function getMyFolder() {
+  const response = await fetch(`${API_URL}/api/users/1/folders`);
+  const responseJson = await response.json();
+  return responseJson.data;
+}
